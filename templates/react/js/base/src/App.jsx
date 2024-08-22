@@ -1,8 +1,8 @@
 function App() {
   return (
-    <div className="w-screen min-h-screen flex flex-col gap-10 items-center justify-center p-6 lg:p-10">
+    <main className="flex min-h-screen flex-col items-center justify-center p-24">
       <h1 className="text-3xl font-bold">Welcome to React-Tailwind template</h1>
-    </div>
+    </main>
   );
 }
 
