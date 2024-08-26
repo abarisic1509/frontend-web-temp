@@ -1,4 +1,4 @@
-import LanguageSwitch from "@/langSwitch";
+import LanguageSwitch from "@/app/langSwitch";
 import { useTranslation } from "@/lib/i18n";
 
 const Home = async ({ params: { lng } }) => {

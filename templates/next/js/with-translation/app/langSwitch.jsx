@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { languages } from "./lib/i18n/settings";
+import { languages } from "../lib/i18n/settings";
 import { usePathname } from "next/navigation";
 
 const LanguageSwitch = ({ lng }) => {
@@ -18,7 +18,12 @@ const LanguageSwitch = ({ lng }) => {
     <ul className="flex items-center gap-5">
       {languages.map((l) => (
         <li key={l}>
-          <Link href={handleLanguageChange(l)}>{l}</Link>
+          <Link
+            href={handleLanguageChange(l)}
+            className={`${lng === l ? "!text-red-500" : ""}`}
+          >
+            {l}
+          </Link>
         </li>
       ))}
     </ul>
