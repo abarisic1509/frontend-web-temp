@@ -1,0 +1,1 @@
+Layout components that wrap around pages or sections of the UI, often providing common structures like headers, footers, or sidebars.

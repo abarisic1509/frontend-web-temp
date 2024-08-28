@@ -1,0 +1,1 @@
+Houses components that handle state, connect to Redux or other stores, and generally manage more complex logic than pure UI components.
