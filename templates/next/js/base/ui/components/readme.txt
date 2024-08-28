@@ -1,0 +1,1 @@
+Contains reusable, often stateless, UI components that are used across the application (e.g., buttons, inputs, modals).
