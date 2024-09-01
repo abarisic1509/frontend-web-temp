@@ -4,7 +4,8 @@ This npm package helps you quickly set up a new project with predefined template
 
 ## IMPORTANT
 
-This package is work-in-progress and will be updated with new features in the future. Should you encounter any issues or hava a request for a new feature, please open an issue on Github repository
+This package is created for practice, as well for saving time on initial project setup. Package is work-in-progress and will be updated with new features in the future. All advices on how to improve it are warmly welcomed.
+Should you encounter any issues or have a request for a new feature, please open an issue on Github repository
 
 ## Features
 
