@@ -35,11 +35,11 @@ const questions = [
     message: "Would you like to include i18next for internationalization?",
   },
 
-  {
+  /* {
     type: "confirm",
     name: "includeComponents",
     message: "Would you like to include predefined components?",
-  },
+  }, */
 ];
 
 async function generateTemplate() {
@@ -48,7 +48,12 @@ async function generateTemplate() {
 
   let projectName =
     answers.projectName === "." ? getCurrentFolderName() : answers.projectName;
-  const { framework, language, useI18next, includeComponents } = answers;
+  const {
+    framework,
+    language,
+    useI18next,
+    /* includeComponents */
+  } = answers;
 
   // Determine the path of the selected template
   const templatePath = path.join(
@@ -76,7 +81,7 @@ async function generateTemplate() {
     await fs.copy(templatePath, targetPath);
 
     // If components are included, copy the components folder separately
-    if (includeComponents) {
+    /*  if (includeComponents) {
       const targetComponentsPath = path.join(
         targetPath,
         framework.toLowerCase() === "react"
@@ -86,11 +91,11 @@ async function generateTemplate() {
       await fs.ensureDir(path.dirname(targetComponentsPath)); // Ensure the directory exists
       await fs.copy(componentsPath, targetComponentsPath);
       console.log("Predefined components included.");
-    }
+    } */
 
     console.log(
-      `Template ${framework} ${language} ${useI18next ? "with i18next" : ""} ${
-        includeComponents ? "and including predefined components" : ""
+      `Template ${framework} ${language} ${
+        useI18next ? "with i18next" : ""
       } copied to ${projectName}`
     );
 
