@@ -2,6 +2,11 @@
 
 This npm package helps you quickly set up a new project with predefined templates for React or Next.js, with options to use TypeScript, and include i18next for internationalization.
 
+## IMPORTANT
+
+This package is created for practice, as well for saving time on initial project setup. Package is work-in-progress and will be updated with new features in the future. All advices on how to improve it are warmly welcomed.
+Should you encounter any issues or have a request for a new feature, please open an issue on Github repository
+
 ## Features
 
 - **Framework Selection:** Choose between React or Next.js (app router).
@@ -36,3 +41,7 @@ yarn dev
 ## Contributions
 
 Contributions are welcome! Please open an issue or submit a pull request on the GitHub repository.
+
+## Buy me a coffee
+
+Found this package helpful? [Buy me a coffee](https://buymeacoffee.com/devana1509)
