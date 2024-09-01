@@ -1,0 +1,17 @@
+{
+  "name": "frontend-web-temp",
+  "version": "1.0.0",
+  "description": "A template project generator for React and Next.js",
+  "main": "scripts/generate-template.js",
+  "scripts": {
+    "test": "node scripts/generate-template.js",
+    "postinstall": "node scripts/generate-template.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^11.2.0",
+    "inquirer": "^10.1.8"
+  }
+}
