@@ -1,7 +1,13 @@
-const fs = require("fs-extra");
-const path = require("path");
-const inquirer = require("inquirer");
-const { execSync } = require("child_process");
+#!/usr/bin/env node
+import inquirer from "inquirer";
+import * as fs from "fs-extra";
+import * as path from "path";
+import { fileURLToPath } from "url";
+import { execSync } from "child_process";
+
+// Convert `import.meta.url` to a file path
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const templatesDir = path.join(__dirname, "../templates");
 
@@ -46,8 +52,7 @@ async function generateTemplate() {
   const prompt = inquirer.createPromptModule();
   const answers = await prompt(questions);
 
-  let projectName =
-    answers.projectName === "." ? getCurrentFolderName() : answers.projectName;
+  let projectName = answers.projectName === "." ? "" : answers.projectName;
   const {
     framework,
     language,
@@ -71,12 +76,15 @@ async function generateTemplate() {
     "components"
   );
 
-  // Create the target directory if it doesn't exist
-  const targetPath = path.join(process.cwd(), projectName);
+  const targetPath = projectName
+    ? path.join(process.cwd(), projectName)
+    : process.cwd();
 
   try {
-    // Create the target directory
-    await fs.ensureDir(targetPath);
+    // Only create the target directory if projectName is not '.'
+    if (projectName) {
+      await fs.ensureDir(targetPath);
+    }
 
     await fs.copy(templatePath, targetPath);
 

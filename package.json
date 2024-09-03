@@ -2,10 +2,18 @@
   "name": "frontend-web-temp",
   "version": "1.0.0",
   "description": "A template project generator for React and Next.js",
+  "type": "module",
   "main": "scripts/generate-template.js",
+  "bin": {
+    "generate-front-template": "scripts/generate-template.js",
+    "ctpl": "scripts/generate-template.js"
+  },
+  "files": [
+    "scripts/generate-template.js",
+    "templates/*"
+  ],
   "scripts": {
-    "test": "node scripts/generate-template.js",
-    "postinstall": "node scripts/generate-template.js"
+    "test": "node scripts/generate-template.js"
   },
   "keywords": [],
   "author": "devAna",
