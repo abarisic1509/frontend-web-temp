@@ -40,37 +40,37 @@ When you generate a new project using this template generator, the project struc
 
 ### React Project Structure
 
-└── /node_modules # Node.js packages  
-└── /public # Static files served by Next.js (images, fonts, etc.)  
-│ └── /locales # Translation files (**only in templates with translation**)  
-└── /src  
-│ └── /assets # Static files like images, fonts, and other media that are used in the project
-│ └── /lib # Utility functions, services, custom hooks, etc.  
-│ │ └── /services # API calls, business logic  
-│ │ └── /store # Redux or other state management setup  
-│ │ └── /types # custom type definitions and interfaces (**only in typescript templates**)  
-│ │ └── /utils # General utility functions used accross the project  
-│ └── /pages # Contains React components that represent different routes in your application  
-│ └── /ui # UI components and containers  
-│ │ └── /components # Reusable UI components  
-│ │ └── /containers # Feature-specific UI containers  
-│ └── App.jsx (or .tsx) # Root component that wraps the entire application, setting up context providers and global styles  
-│ └── i18n.js (or .ts) # Internationalization configuration (**only in templates with translation**)  
-│ └── index.css # Global CSS styles applied across the entire application.  
-│ └── main.jsx # entry point of the React application where the root component (App.jsx) is rendered to the DOM.  
-│ └── vite-env.d.ts # File that ensures TypeScript types are correctly applied to React-specific features and configurations. (**only in typescript templates**)  
-└── .gitignore # Specifies which files and directories should be ignored by Git  
-└── eslintrc.json # ESLint configuration file  
-└── index.html # Main HTML template for the React application, providing the base structure and the root element where the React app is rendered.  
-└── package.json # Project metadata and dependencies  
-└── postcss.config.mjs # Postcss configuration file  
-└── README.md # Automaticly generated instructions for React projects  
-└── tailwind.config.js # Tailwind configuration file  
-└── tsconfig.app.json # Specifies TypeScript compiler options for the application code, including settings for module resolution and strict type checking. (**only in typescript templates**)  
-└── tsconfig.json # TypeScript compiler options configuration (**only in typescript templates**)  
-└── tsconfig.node.json # Configuration for TypeScript compiler options specifically for Node.js-related code, such as server-side logic and scripts.
-(**only in typescript templates**)  
-└── vite.config.js (or .ts) # Vite configuration file
+-/node_modules # Node.js packages<br/>
+-/public # Static files served by Next.js (images, fonts, etc.)<br/>
+---/locales # Translation files (**only in templates with translation**)<br/>
+-/src<br/>
+---/assets # Static files like images, fonts, and other media that are used in the project<br/>
+---/lib # Utility functions, services, custom hooks, etc.<br/>
+-----/services # API calls, business logic<br/>
+-----/store # Redux or other state management setup<br/>
+-----/types # custom type definitions and interfaces (**only in typescript templates**)<br/>
+-----/utils # General utility functions used accross the project<br/>
+---/pages # Contains React components that represent different routes in your application<br/>
+---/ui # UI components and containers<br/>  
+-----/components # Reusable UI components<br/>  
+-----/containers # Feature-specific UI containers<br/>
+---App.jsx (or .tsx) # Root component that wraps the entire application, setting up context providers and global styles<br/>
+---i18n.js (or .ts) # Internationalization configuration (**only in templates with translation**)<br/>
+---index.css # Global CSS styles applied across the entire application.<br/>
+---main.jsx # entry point of the React application where the root component (App.jsx) is rendered to the DOM.<br/>
+---vite-env.d.ts # File that ensures TypeScript types are correctly applied to React-specific features and configurations. (**only in typescript templates**)<br/>
+-.gitignore # Specifies which files and directories should be ignored by Git<br/>
+-eslintrc.json # ESLint configuration file<br/>
+-index.html # Main HTML template for the React application, providing the base structure and the root element where the React app is rendered.<br/>
+-package.json # Project metadata and dependencies<br/>
+-postcss.config.mjs # Postcss configuration file<br/>
+-README.md # Automaticly generated instructions for React projects<br/>
+-tailwind.config.js # Tailwind configuration file<br/>
+-tsconfig.app.json # Specifies TypeScript compiler options for the application code, including settings for module resolution and strict type checking. (**only in typescript templates**)<br/>
+-tsconfig.json # TypeScript compiler options configuration (**only in typescript templates**)<br/>
+-tsconfig.node.json # Configuration for TypeScript compiler options specifically for Node.js-related code, such as server-side logic and scripts.
+(**only in typescript templates**)<br/>
+-vite.config.js (or .ts) # Vite configuration file<br/>
 
 ### Next.js Project Structure
 
@@ -86,7 +86,7 @@ When you generate a new project using this template generator, the project struc
 │ │ └── /utils # General utility functions used accross the project
 │ ├── /ui # UI components and containers
 │ │ ├── /components # Reusable UI components
-│ │ └── /containers # Feature-specific UI containers  
+│ │ └── /containers # Feature-specific UI containers<br/>
 │ ├── middleware.js (or .ts) # middleware setup (**only in templates with translation**)
 ├── eslintrc.json # ESLint configuration file
 ├── .gitignore # Specifies which files and directories should be ignored by Git
