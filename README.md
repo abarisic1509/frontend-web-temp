@@ -7,13 +7,6 @@ This npm package helps you quickly set up a new project with predefined template
 This package is created for practice, as well for saving time on initial project setup. Package is currently in BETA and will be regulary updated in the future. All advices on how to improve it are warmly welcomed.
 Should you encounter any issues or have a request for a new feature, please open an issue on Github repository
 
-## Features
-
-- **Framework Selection:** Choose between React or Next.js (app router).
-- **Language Selection:** Choose between JavaScript or TypeScript.
-- **Internationalization:** Optionally include i18next for multi-language support.
-- **Project structure setup:** Each template includes predefined and scalable project structure.
-
 ## Installation
 
 Before using this package, make sure you have Node.js and npm installed on your machine.
@@ -33,6 +26,13 @@ npx devassist-frontend-web-temp
 ```bash
 npm run dev
 ```
+
+## Features
+
+- **Framework Selection:** Choose between React or Next.js (app router).
+- **Language Selection:** Choose between JavaScript or TypeScript.
+- **Internationalization:** Optionally include i18next for multi-language support.
+- **Project structure setup:** Each template includes predefined and scalable project structure.
 
 ## Project structure
 
