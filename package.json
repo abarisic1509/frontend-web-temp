@@ -1,6 +1,6 @@
 {
   "name": "devassist-frontend-web-temp",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A template project generator for React and Next.js",
   "type": "module",
   "main": "scripts/generate-template.js",
@@ -15,7 +15,18 @@
   "scripts": {
     "test": "node scripts/generate-template.js"
   },
-  "keywords": [],
+  "keywords": [
+    "template",
+    "frontend template",
+    "frontend",
+    "react",
+    "react template",
+    "next.js",
+    "next.js template",
+    "nextjs",
+    "nextjs template",
+    "template generator"
+  ],
   "author": "devAna",
   "license": "ISC",
   "repository": {
