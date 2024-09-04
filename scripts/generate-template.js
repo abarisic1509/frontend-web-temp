@@ -102,7 +102,7 @@ async function generateTemplate() {
     } */
 
     console.log(
-      `Template ${framework} ${language} ${
+      `Template ${framework}-${language} ${
         useI18next ? "with i18next" : ""
       } copied to ${projectName ? projectName : getCurrentFolderName()}`
     );

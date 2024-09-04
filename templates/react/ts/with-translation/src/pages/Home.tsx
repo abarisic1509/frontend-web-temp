@@ -9,32 +9,28 @@ const Home = () => {
   };
 
   return (
-    <main className="flex min-h-screen flex-col gap-20 items-center justify-center p-24">
-      <h1 className="text-3xl font-bold">
-        Welcome to React-Typescript-Tailwind-i18next template
+    <main className="flex min-h-screen flex-col gap-10 items-center justify-center p-24 bg-neutral-900 text-center">
+      <h1 className="text-3xl font-bold text-neutral-100">
+        {t("welcomeTo")} React-Typescript-Tailwind-i18next {t("template")}
       </h1>
-      <section className="flex flex-col gap-6 w-full">
-        <div className="flex flex-col w-full">
-          <p className="text-xs text-neutral-400">Translation test</p>
-          <h2>{t("areYouSure")}</h2>
-          <div className="flex items-center gap-5">
-            <p>{t("yes")}</p>
-            <p>{t("no")}</p>
-          </div>
-
-          <select
-            className="w-20"
-            onChange={(e) => changeLanguage(e.target.value)}
-            value={i18n.language}
-          >
-            {langs.map((lng) => (
-              <option key={lng} value={lng}>
-                {lng}
-              </option>
-            ))}
-          </select>
-        </div>
-      </section>
+      <select
+        className="w-20 bg-neutral-700 py-1 px-4 rounded text-neutral-50"
+        onChange={(e) => changeLanguage(e.target.value)}
+        value={i18n.language}
+      >
+        {langs.map((lng) => (
+          <option key={lng} value={lng}>
+            {lng}
+          </option>
+        ))}
+      </select>
+      <a
+        href="https://github.com/abarisic1509/frontend-web-temp"
+        target="_blank"
+        className="flex items-center py-3 px-20 rounded bg-neutral-100 text-neutral-900 hover:bg-neutral-300"
+      >
+        GitHub
+      </a>
     </main>
   );
 };

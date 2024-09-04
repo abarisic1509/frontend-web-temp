@@ -1,6 +1,6 @@
 "use client";
+import { languages } from "@/src/lib/i18n/settings";
 import Link from "next/link";
-import { languages } from "../lib/i18n/settings";
 import { usePathname } from "next/navigation";
 
 const LanguageSwitch = ({ lng }) => {
@@ -20,7 +20,9 @@ const LanguageSwitch = ({ lng }) => {
         <li key={l}>
           <Link
             href={handleLanguageChange(l)}
-            className={`${lng === l ? "!text-red-500" : ""}`}
+            className={`w-20 h-10 rounded-sm grid place-items-center hover:bg-neutral-800 ${
+              lng === l ? "text-red-500" : "text-neutral-200"
+            }`}
           >
             {l}
           </Link>

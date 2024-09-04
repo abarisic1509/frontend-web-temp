@@ -1,26 +1,21 @@
-import LanguageSwitch from "@/src/app/langSwitch";
 import { useTranslation } from "@/src/lib/i18n";
+import LanguageSwitch from "@/src/ui/containers/LanguageSwitch";
 
 const Home = async ({ params: { lng } }) => {
   const { t } = await useTranslation(lng);
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-24">
-      <h1 className="text-3xl font-bold">
-        Welcome to Next.js-Tailwind-i18next template
+    <main className="flex min-h-screen flex-col gap-10 items-center justify-center p-24 bg-neutral-900 text-center">
+      <h1 className="text-3xl font-bold text-neutral-100">
+        {t("welcomeTo")} Next.js-Tailwind-i18next {t("template")}
       </h1>
-
-      <section className="flex flex-col gap-6 w-full">
-        <div className="flex flex-col w-full">
-          <p className="text-xs text-neutral-400">Translation test</p>
-          <h2>{t("areYouSure")}</h2>
-          <div className="flex items-center gap-5">
-            <p>{t("yes")}</p>
-            <p>{t("no")}</p>
-          </div>
-
-          <LanguageSwitch lng={lng} />
-        </div>
-      </section>
+      <LanguageSwitch lng={lng} />
+      <a
+        href="https://github.com/abarisic1509/frontend-web-temp"
+        target="_blank"
+        className="flex items-center py-3 px-20 rounded bg-neutral-100 text-neutral-900 hover:bg-neutral-300"
+      >
+        GitHub
+      </a>
     </main>
   );
 };
