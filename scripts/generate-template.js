@@ -104,7 +104,7 @@ async function generateTemplate() {
     console.log(
       `Template ${framework} ${language} ${
         useI18next ? "with i18next" : ""
-      } copied to ${projectName}`
+      } copied to ${projectName ? projectName : getCurrentFolderName()}`
     );
 
     // Change to the target directory

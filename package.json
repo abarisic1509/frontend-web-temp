@@ -1,11 +1,11 @@
 {
-  "name": "frontend-web-temp",
+  "name": "devassist-web-temp",
   "version": "1.0.0",
   "description": "A template project generator for React and Next.js",
   "type": "module",
   "main": "scripts/generate-template.js",
   "bin": {
-    "generate-front-template": "scripts/generate-template.js",
+    "devassist-generate-template": "scripts/generate-template.js",
     "ctpl": "scripts/generate-template.js"
   },
   "files": [
