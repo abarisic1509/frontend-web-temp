@@ -21,7 +21,7 @@ Before using this package, make sure you have Node.js and npm installed on your 
 1. Install the package
 
 ```bash
-npx devassist-generate-tempate
+npx devassist-frontend-web-temp
 ```
 
 2. Set project name
