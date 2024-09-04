@@ -40,10 +40,10 @@ When you generate a new project using this template generator, the project struc
 
 ### React Project Structure
 
-├── /node_modules # Node.js packages  
-├── /public # Static files served by Next.js (images, fonts, etc.)  
+└── /node_modules # Node.js packages  
+└── /public # Static files served by Next.js (images, fonts, etc.)  
 │ └── /locales # Translation files (**only in templates with translation**)  
-├── /src  
+└── /src  
 │ └── /assets # Static files like images, fonts, and other media that are used in the project
 │ └── /lib # Utility functions, services, custom hooks, etc.  
 │ │ └── /services # API calls, business logic  
