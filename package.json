@@ -28,7 +28,7 @@
     "template generator"
   ],
   "author": "devAna",
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/abarisic1509/frontend-web-temp"
