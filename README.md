@@ -103,6 +103,6 @@ When you generate a new project using this template generator, the project struc
 
 Contributions are welcome! Please open an issue or submit a pull request on the GitHub repository.
 
-## Buy me a coffee
+## Like my work?
 
 Found this package helpful? [Buy me a coffee](https://buymeacoffee.com/devana1509)
