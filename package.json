@@ -1,5 +1,5 @@
 {
-  "name": "devassist-web-temp",
+  "name": "@devassist/frontend-web-temp",
   "version": "1.0.0",
   "description": "A template project generator for React and Next.js",
   "type": "module",
