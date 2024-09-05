@@ -1,6 +1,6 @@
 # Project Template Generator
 
-This npm package helps you quickly set up a new project with predefined templates for React or Next.js, with options to use TypeScript, and include i18next for internationalization.
+This npm package helps you quickly set up a new project with predefined templates for React or Next.js, with Tailwind configuration for styling, options to use TypeScript, and include i18next for internationalization.
 
 ## IMPORTANT
 
